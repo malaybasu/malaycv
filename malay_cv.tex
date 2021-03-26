@@ -1,0 +1,487 @@
+\documentclass[10pt,letterpaper]{moderncv}
+
+% moderncv themes
+% \moderncvtheme[blue]{casual} % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+% % idem
+%\moderncvtheme[grey]{classichack}
+\moderncvtheme[grey]{classic}
+
+% character encoding
+% \usepackage[utf8]{inputenc} % replace by the encoding you are using
+%\usepackage{bibtopic} 
+%\usepackage{natbib} 
+%\usepackage{breakurl}
+\usepackage{mathpazo}
+\usepackage[no-path]{fontspec} 
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{xunicode} \usepackage{xltxtra} \setmainfont{Myriad Pro}
+\setsansfont{Myriad Pro} \setmonofont{Consolas}
+%\fontspec[Ligatures={Rare}]{Myriad Pro}
+
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+\recomputelengths % required when changes are made to page layout lengths
+
+% personal data
+\firstname{\huge{} Malay~Kumar~Basu} \familyname{} 
+\title{\LARGE Curriculum Vit\ae}
+% \address{\textsf{University of Alabama, Birmingham\\Department of Pathology WP P220D\\619 19th St. S.}}{\textsf{Birmingham, AL 35249 USA}} % optional, remove the line if not wanted
+\address{\textsf{1924 Highfield Dr.}}{\textsf{Vestavia, AL 35216 USA}} % optional, remove the line if not wanted
+\mobile{Mobile: 240-421-2460} % optional, remove the line if not wanted
+\phone{Phone: 240-428-8246} % optional, remove the line if not wanted
+%\fax{fax (optional)} % optional, remove the line if not wanted
+\email{Email: malaykbasu@gmail.com} % optional, remove the line if not wanted
+%\email{Email: malaykbasu@gmail.com}
+\extrainfo{\Lightning{} Web: www.malaybasu.com} % optional, remove the line if not wanted
+% \photo[64pt]{picture} % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{Some quote
+%   (optional)} % optional, remove the line if not wanted
+
+% \nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
+%\usepackage[dvipdfm]{hyperref}
+%\usepackage{breakurl}
+\usepackage{multibib}
+\newcites{articles,perspectives,reviews,others}{%
+Research Articles,%
+Perspective with original data,%
+Invited book chapters and reviews,%
+Other publications}
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+\makeatletter
+\renewenvironment{thebibliography}[1]%
+  {%
+    \subsection{\refname}%
+    %\small%
+    \begin{list}{\bibliographyitemlabel}%
+      {%
+        \setlength{\topsep}{0pt}%
+        \setlength{\labelwidth}{\hintscolumnwidth}%
+        \setlength{\labelsep}{\separatorcolumnwidth}%
+        \leftmargin\labelwidth%
+        \advance\leftmargin\labelsep%
+        \@openbib@code%
+        \usecounter{enumiv}%
+        \let\p@enumiv\@empty%
+        \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+        \sloppy\clubpenalty4000\widowpenalty4000%
+  }%
+  {%
+    \def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+    \end{list}%
+  }
+\makeatother
+
+
+%\newbibliography{bk}
+%\newcites{bk}{Books}
+% ----------------------------------------------------------------------------------
+% content
+% ----------------------------------------------------------------------------------
+
+
+
+
+\begin{document}
+%\fontspec{\addfontfeature[Ligatures=noRare]{Myriad Pro}
+% \bibliographystylearticles{unsrt}
+\bibliographystylearticles{plainyr-rev} 
+\bibliographystyleperspectives{unsrt}
+\bibliographystylereviews{unsrt}
+\bibliographystyleothers{unsrt}
+%\bibliographystylebk{myapalike}
+\urlstyle{same}
+\renewcommand{\listitemsymbol}{-}
+\maketitle
+\section{Research Interests}
+\vspace{-10pt}
+\cvline{}{Comparative and evolutionary genomics; Computational Biology; Bioinformatics; Data-mining and machine-learning; developing software
+ tools for bioinformatics; genome informatics; high-performance, cloud and grid computing.}
+%\cvline{Present}{Large-scale automated genome analysis; evolutionary genomics.}
+
+\section{Academic Appointments}
+% \subsection{Vocational}
+
+\cventry{2012--Present}{Assistant Professor}{Department of Pathology}
+{University of Alabama, Birmingham}{Birmingham, AL, USA}{}
+\cventry{2013--Present}{Director}{Genifx Genome Informatics Facility}{University of Alabama, Birmingham}{Birmingham, AL, USA}{Genifx genome analysis facility at UAB (\url{http://genifx.uab.edu}) is a UAB Health Science Foundation funded project to create a next-generation sequenced (NGS) data storage and analysis facility at UAB. Designed, created, and now maintains CHOIR/Genifx compute cluster at Department of Pathology, UAB.}
+\cventry{2012--Present}{Associate Scientist}{Comprehensive Cancer Center}{University of Alabama, Birmingham}{Birmingham, AL, USA}{}
+\cventry{2015--Present}{Senior Scientist}{Informatics Institute}{University of Alabama, Birmingham}{Birmingham, AL, USA}{}
+\cventry{2014--Present}{Assistant Professor}{Department of Clinical and Diagnostic Sciences, School of Health Professions}{University of Alabama, Birmingham}{Birmingham, AL, USA}{}
+\cventry{2020--Present}{Scientist}{Center for Clinical and Translational Science (CCTS)}{University of Alabama, Birmingham}{Birmingham, AL, USA}{}
+% \cventry{2012--Present}{Adjunct Scientist}{J. Craig Venter Institute}{Rockville}{USA}{}
+
+\cventry{2010--2012}{Assistant Professor}{J. Craig Venter Institute}{Rockville}{USA}{}
+\cventry{2009--2010}{Staff Scientist}{J. Craig Venter Institute}{Rockville}{USA}{}
+\cventry{Dec 2008--Feb 2009}{Senior Bioinformatics Engineer}{J. Craig Venter Institute}{Rockville}{USA}{} 
+
+\cventry{2003--2008}{Postdoctoral Fellow}{National Center for Biotechnology Information (NCBI)}{National Institutes of Health (NIH),
+  Bethesda}{USA}{Research in the field of computational biology and
+  bioinformatics under the supervision of
+  Dr.~Eugene~V.~Koonin.}  % arguments 3 to 6 are optional
+
+\cventry{2002--2003}{Research Associate}{Center for Cellular and
+  Molecular Biology (CCMB)}{Hyderabad}{India}{Performed independent research in Bioinformatics. Single-handedly designed and built an eight node Linux cluster; installed hardware, performed
+  software installation; helped in training and recruiting personnel
+  for maintenance of the cluster.}  % arguments 3 to 6 are optional
+% \subsection{Miscellaneous}
+%\cventry{2002--2002}{Research Fellow}{Center for Cellular and Molecular Biology (CCMB)}{Hyderabad}{India}{Performed independent research in the field of Bioinformatics.}% arguments 3 to 6 are optional
+
+\section{Education}
+\subsection{Degrees}
+\cventry{2020--2021}{MBA}{Collat Business School}{University of Alabama, Birmingham, USA}{}{\small Anticipated 2021.}
+\cventry{1995--2002}{PhD (Life Science)}{Center for Cellular and
+  Molecular Biology}{Hyderabad, India}{}{\small Degree awarded in
+  2003.}  % arguments 3 to 6 are optional
+\cventry{1993--1995}{MTech (Biotechnology)}{Jadavpur
+  University}{Kolkata, India}{}{} % arguments 3 to 6 are optional
+\cventry{1990--1992}{MSc (Zoology with specialization in Cytology
+  and Genetics)}{University of Calcutta}{Kolkata, India}{}{}
+\cventry{1987--1990}{BSc(Honours in Zoology)}{University of
+  Calcutta}{Kolkata, India}{}{}
+
+\subsection{Diplomas}
+\cventry{2011}{Certificate in Machine Learning}{Online course, Stanford University}{Taught by Andrew Ng}{}{}
+\cventry{2011}{Certificate in Artificial Intelligence}{Online course, Stanford University}{Taught by Sebastian Thrun and Peter Norvig}{}{} 
+\cventry{1994}{Certificate in Unix and C}{Computer Science and
+  Engineering Department}{Jadavpur University}{Kolkata, India}{C
+  programming in Unix environment both PC and mainframe.}
+\cventry{1993}{Programming Techniques and System Design
+  Methodologies}{Regional Computer Centre}{Kolkata, India}{}{\small
+  Details of software design and database programming is several
+  languages on PC and mainframe--- CYBER 180/84A.}
+\cventry{1992}{Postgraduate Diploma in Ecology and Environment}{Indian
+  Institute of Ecology and Environment}{New Delhi, India}{}{Environmental engineering and laws.}
+\cventry{1992}{Contact Programme in Molecular Biology}{Department of
+  Zoology}{Banaras Hindu University}{Varanasi, India}{\small Basic
+  molecular biology laboratory techniques.}
+
+% \section{Ph.D. Thesis}
+% \cvline{Title}{Regulation of gene expression in the Antarctic
+%   psychrotroph \emph{Pseudomonas syringae}: studies on the stationary
+%   phase specific $\sigma$ factor.}
+% % \cvline{supervisors}{Supervisors}
+% \cvline{Description}{\small Characterization and cloning of $\sigma$
+%   factors from the organism and to look into the relationship between
+%   cold-adaptation and stationary phase response.}
+
+
+
+\section{Publications (* corresponding author)}
+
+%\subsection{Research Articles}
+% Publications from a BibTeX file
+\nocitearticles{*}
+\bibliographyarticles{mypub_articles}
+%\begin{btSect}{mypub_articles}  
+%  \btPrintAll
+%\end{btSect}                    
+%\subsection{Perspectives with original data}
+
+% \vspace{12pt}
+% \nociteperspectives{*}
+% \bibliographyperspectives{mypub_perspectives}
+%\begin{btSect}{mypub_pers}
+%  \btPrintAll
+%\end{btSect}
+%\subsection{Invited Book Chapters and Reviews}
+
+\vspace{12pt}
+\nocitereviews{*}
+\bibliographyreviews{mypub_reviews}
+%\begin{btSect}{mypub_books}
+%  \btPrintAll
+%\end{btSect}
+%\subsection{Other Publications and Manuscripts}
+
+\vspace{12pt}
+\nociteothers{*}
+\bibliographyothers{mypub_others}
+%\begin{btSect}{mypub_others}
+%  \btPrintAll
+%\end{btSect}
+
+\vspace{16pt}
+
+\section{Software Publications}
+\cvline{SaucePan}{Protein clustering software meta-package. Implements a novel language-modeling algorithm to identify orthologs. Internally used in JCVI.}
+\cvline{ProPhylo}{A high-performance parallel Perl framework for genome-scale phylogenetic profile comparison
+  and the associated databases. Available at \url{https://github.com/malaybasu/ProPhylo}.}
+\cvline{NCBIWeb}{Perl modules to automate NCBI web server.}
+\cvline{AnnotationRules}{Functional annotation of protein using rules. Used in annotation pipeline at JCVI.}
+\cvline{SeWeR}{A very
+  popular and widely used interface for bioinformatics services. SeWeR
+  has been translated into several languages, and written using
+  JavaScript and DHTML. Available at
+  \url{http://www.bioinformatics.org/sewer}.}  
+  \cvline{Pastel}{A Perl
+  framework for generating Scalable Vector Graphics (SVG) and
+  animation. The API closely resembles Java Graphics2D API with
+  state-of-the–art computational geometry support. Available at
+  \url{http://www.bioinformatics.org/pastel}.}  
+  \cvline{BioSVG}{The
+  first application of SVG in bioinformatics. A Perl framework for
+  generating high-resolution vector graphics for biological
+  data. Available at \url{http://www.bioinformatics.org/biosvg}.}
+\cvline{Savvy}{A CGI-based plasmid drawing software that generates
+  print-quality, editable plasmid maps in SVG format. Available at
+  \url{http://www.bioinformatics.org/savvy}.}  
+  \cvline{ABI.pm}{A
+  module for parsing ABI chromatogram files. Available from CPAN
+  (\url{http://search.cpan.org/~malay/ABI-0.01}).}
+\cvline{SeqToolBox}{My personal sequence analysis toolbox. Used in many projects that I wrote. Available at \url{https://github.com/malaybasu/SeqToolBox}}
+\cvline{Font::TTFMetrics}{A Perl module for parsing True Type Font
+  file. Available from CPAN
+  (\url{http://search.cpan.org/~malay/Font-TTFMetrics-0.1/}).}
+\cvline{pastel-ttf2svg.pl}{Converts TTF file to SVG font
+  file. Available from CPAN.
+  (\url{http://www.cpan.org/pub/CPAN/authors/id/M/MA/MALAY/pastel-ttf2svg-0.04.zip}).}
+\cvline{Clinical genomics pipeline}{I was the chief architect of the clinical genomics pipeline of at UAB, Dept. of Pathology. }
+
+\section{Awards and honors}
+
+% \section{Fellowships}
+\cvline{2020}	{Excellence in Teaching Award by Graduate school, University of Alabama, Birmingham.}
+\cvline{2017--2019}{Elected member of UAB faculty senate.}
+\cvline{2017}{Nominated for Dean’s excellence award in teaching, School of Medicine, University of Alabama, Birmingham.}
+\cvline{2016}{Nominated for Dean’s excellence in teaching award, School of Medicine, University of Alabama, Birmingham.}
+\cvline{2012--Present}{Adjunct faculty F1000 prime.}
+\cvline{2003--2008}{NIH intramural fellowship.}
+\cvline{2002}{Travel award from O'Reilly publishing.}
+\cvline{2002}{Travel award from Council for Scientific and Industrial
+  Research, India.}  
+  \cvline{1997--2001}{Senior research fellowship
+  from Council for Scientific Industrial Research, India.}
+\cvline{1995--1997}{Junior research fellowship from Council for
+  Scientific Industrial Research, India.}
+\cvline{1993--1995}{Fellowship from Department of Biotechnology, Govt. of India.}
+\subsection{Awards and honors from lab}
+\cvline{2019}{Felipe Massicano won departmental travel award to attend American Society of Hematology annual meeting held in Orlando, FL.}
+\cvline{2019}{Felipe Massicano won Abstract Achievement Award at the American Society of Hematology annual meeting held in Orlando, FL.}
+\cvline{2018}{Amrita Lakhanpal, high school student. Her project was awarded Intel Excellence in Computer Science award, 2018.}
+
+\section{Editorial boards}
+\cvline{2021—-Present}{Editor, BMC Genomics Data (Springer).}
+\cvline{2020--Present}{Reviewing board Member, Cancers (MDPI, IF: 6.126).} 
+\cvline{2015—-2020}{Editorial board Member, Heliyon (Elsevier).} 
+\cvline{2014—-Present}{Appointed editorial board member; Bioinformatics section, BioMed Research International (Impact: 2.88).}
+\cvline{2013--Present}{Appointed editorial Board member; Evolutionary Biology Section, BioMed Research International}
+% \cvline{2012--Present}Adjunct faculty F1000 prime
+\cvline{2011--Present}{Reviewing board member, Frontiers in Bioinformatics and Computational Biology.}
+
+\section{Grant review}
+\cvline{2021}{Israel Science Foundation (ISF), Israel.}
+\cvline{2017}{National Science Foundation.}
+\cvline{2017}{Selected for NIH Early Career Reviewer (ECR) program.}
+\cvline{2015}{National Science Foundation (NSF) career award.}
+
+\section{Councils and committees}
+\cvline{2019}{Member, organizing committee, Midsouth Bioinformatics Conference (MCBIOS), 2019.}
+\cvline{2019}{Poster judge, Midsouth Bioinformatics and Computational Biology society conference, 2019}
+\cvline{2019}{Faculty Advisory Committee of Bryan Guillory.}
+\cvline{2018}{Member, faculty search committee, Genomic Diagnostic and Bioinformatics division, Department of Pahtology.}
+\cvline{2018}{Judge, Pathology research day symposium.}
+\cvline{2017—-Present}{Member, Bioinformatics Educational Committee, Informatics Institute, UAB.}
+\cvline{2017—-Present}{Member, Informatics Gateway Committee, a research evaluation committee created by CCTS and Informatics institute for facilitating bioinformatics collaborations.}
+\cvline{2017—-Present}{Member, departmental IRB review committee.}
+\cvline{2017—-2019}{Elected member of UAB faculty senate.}
+\cvline{2017—-2019}{Member, graduate curriculum committee, UAB faculty senate.}
+\cvline{2017--2018}{Chair,  Bioinformatics Power Talks steering committee, a joint initiative between Informatics Insitute and CB2 computational biology and bioinformatics group at UAB.}
+\cvline{2015--Present}{Thesis advisory committees of, Joseph Palmer, John Schoelz, Sean Wilkinson }
+\cvline{2014—Present}{Advisor to the Molecular Tumor Board, UAB.}
+\cvline{2012—-2014}{Faculty Advisory Council member for representing the following divisions of Department of Pathology: Informatics, Neuropathology, Forensic Pathology.}
+\cvline{2012—-Present}{Founder,  Computational Biology and Bioinformatics activity (CB2; http://uab.edu/cb2) at UAB.}
+\cvline{2006--2007}{Institute selected member of Fellows Committee (FELCOM) at NIH.}
+\cvline{2007}{Chief judge of Bioinformatics and Computational Biology section of Fellows Award of Research Excellence (FARE) at NIH.}
+\cvline{2006}{Judge, RECOMB satellite
+  workshop on comparative genomics, Montr\'eal, Canada.}
+
+
+\section{Invited talks and workshops}
+\cvline{2020-04-06--09}{Bioinformatics workshop at Yale School of Medicine.}
+\cvline{2020-04-06}{Department of Immunology, Yale University, Connecticut, USA. (Postponed for lockdown).}
+\cvline{2020-03-13}{Annual Translational and Transformative Informatics Symposium (ATTIS), 2020. “Reading the book of life: the grammar of genes”.}
+\cvline{2019-10-07}{Department of Microbiology and Immunology, University of Mississippi Medical Center, University of Mississippi, Oxford, Mississippi, USA. Visited various department and delivered a talk entitled: “Reading the book of life: The language of the genes”.}
+\cvline{2019-03-30}{Midsouth Bioinformatics and Computational Biology Society Conference, 2019. “Reading the book of life: Language of Genomes”.}
+\cvline{2018-04-25}{Translational Bioinformatics Symposium, UAB. “DBGES: A Novel Gene Expression signature for developing a mitochondria based targeted therapy”.}
+\cvline{2018-01-29}{UAB department of medicine, Hematology and Oncology conference: “Cancer genome data-mining to identify a novel gene-expression signature for ovarian cancer prognosis”.}
+\cvline{2017-05-03}{UAB 1st Annual Translational Bioinformatics Mini-Symposium. “A novel gene-expression signature for ovarian cancer prognosis”.}
+\cvline{2018-01-29}{UAB department of medicince, Hematology and Oncology conference: “Cancer genome data-mining to identify a novel gene-expression signature for ovarian cancer prognosis”.}
+\cvline{2017-05-03}{UAB 1st Annual Translational Bioinformatics Mini-Symposium. “A novel gene-expression signature for ovarian cancer prognosis”.}
+\cvline{2016-09-21}{UAB Department of Biology. "Language of the genes".}
+\cvline{2016-02-09}{UAB Department of Pathology. Molecular and Cellular Pathology Seminar "Unraveling Novel Biological Paradigms from Large-scale Analysis of Cancer Genomes".}
+\cvline{2014-03-06}{Invited speaker, Hudson Alpha Institute of Bioinformatics, AL.}
+\cvline{2013}{Genetics and Genomics Seminar Series (Jan 2013): "Investigating Biological Systems Using Phylogenetic Profiling”.}
+\cvline{2011}{Invited faculty to teach in the training course “Molecular Methods for Characterization, conservation and utilization of biodiversity”, held in Feb-March, 2011 in Hyderabad, India.}
+
+\cvline{2012}{University of Alabama, Birmingham.}
+% \cvline{2011}{Faculty to teach in the training course “Molecular Methods for Characterization, conservation and utilization of biodiversity”, held in Feb-March, 2011 in Hyderabad, India.}
+\cvline{2011}{Center for DNA fingerprinting and Diagnostics, Hyderabad, India.}
+\cvline{2008}{Memorial Sloan-Kettering Cancer Center, NY.}
+\cvline{2008}{Institute of Genome Sciences, Baltimore, MD.}
+\cvline{2008}{University of Maryland, College Park, MD.}
+\cvline{2002}{Speaker in \emph{O’Reilly
+    Bioinformatics Technology conference}, 2002, held in Tucson,
+  Arizona. I delivered a talk entitled, \emph{``DHTML and Scalable
+    Vector Graphics in Bioinformatics''}.}  
+  %   \cvline{2001}{Presented research work as independent investigator in
+  % Research Council meeting in CCMB, Hyderabad, India.}
+
+% \section{Grants}
+% \cvline{2012}{\emph{``The linguistics of protein domain architecture''}; being submitted to NSF.}
+% \cvline{2012}{\emph{``Linguistic exploration of cancer genome rearrangements''}; being submitted to NIH.}
+
+\section{Teaching Experience}
+\cvline{2021--Present}{Co-director and designer of a new undergraduate bioinformatics course, “Introductory bioinformatics”.}
+\cvline{2018--Present}{Co-director and designer of a new bioinformatics course, “INFO 510: Programming with biological data”.}
+\cvline{2014--Present}{Course master of  “CB2-101: Introduction to Scientific Computing”. A highly rated (rating score 9.5/10) hands-on 48 hours training course, open to everyone, at UAB. Also a graduate course of 3 credit hours.  \url{http://cmb.path.uab.edu/training/cb2-101.html.}}
+\cvline{2015--Present}{Course master of “CB2-201: Bioinformatics and Computational Biology”. A highly rated (9.5/10) 40hr hands-on training course. Also a 3 credit graduate course. \url{http://cmb.path.uab.edu/traning/cb2-201.html.}}
+\cvline{2018}{Taught in GBS779: Translational Research. Course master: Eddy Yang.}
+\cvline{2017--2018}{Organizer and course master of “Bioinformatics Power Talks”. This is a new university-wide bioinformatics research and journal discussion club, jointly sponsored by Computational Biology and Bioinformatics (CB2) and Informatics Institute, UAB. This is also a registered GBS course with 1 credit.} 
+\cvline{2014}{Course master of “Computational Genomics”. Advanced bioinformatics course. GBS 787. No longer offerred.} 
+\cvline{2014-02-05}{Taught and evaluated evolutionary genomics GBS 722.}
+\cvline{2013--2017}{Course master of a highly rated Computational Biology and Bioinformatics (CB2) journal club. Also a graduate school course of 1 credit hour.} 
+\cvline{2013}{Taught and evaluated “Molecular Evolution” GBS 722.}
+% 2013	Offered two Graduate Biomedical Science courses “Computational Genomics” and “Scientific Programming”  
+\cvline{2013}{Highly rated laboratory medicine course on “Genomics” (Rating 4.65/5.00).}
+% 2012			Summer Intern Darshan Patel. School of Health Profession.
+\cvline{2012}{School of Health Professionals “Introduction to Bioinformatics.”}
+% 2011				Taught phylogenetic techniques and basics of Linux operating systems in workshop of Association for DNA fingerprinting and Associated Techniques (ADNAT), India.
+
+\section{Mentoring}
+\cvline{2018--2020}{Filepe Massicano, Postdoctoral fellow.}
+\cvline{2019--2020}{Christopher Coffee, Undergraduate student intern.} 
+\cvline{2016--2018}{Lijia Yu, Visiting Fellow. Joining Cambridge University, UK to pursue Ph.D.} 
+\cvline{2017--2018}{Amrita Lakhanpal, high school students. Her project was awarded Intel Excellence in Computer Science Award.}
+\cvline{2017}{Margaret Bell. GBS Rotation student}
+\cvline{2014--2016}{Deepak Tanwar, Visiting Fellow then Research Assistant. Currently pursuing Ph.D. in ETH Zurich.}
+\cvline{2014--2016}{Emannuel Penha, Visiting Fellow. Now faculty in Brazil.}
+\cvline{2014--2015}{Aseygul Bulut, Part-time student assistant.}
+\cvline{2013}{Paul Boothe,  Medical student intern in Cancer Research Experience for Students (CaRES) program.}
+\cvline{2013}{Darshan Patel, Biotechnology Intern, School of Health Professions.}
+\cvline{2011}{Meghna Yadigiri, Summer Intern at J. Craig Venter Institute.}
+
+
+
+% \cvline{2011}{Taught phylogenetic techniques and basics of Linux operating systems in workshop of Association for DNA fingerprinting and Associated Techniques (ADNAT), India.}  
+% \cvline{2011}{Mentored summer intern in computational linguistics.}
+% \cvline{2006}{Mentored summer student in grid-computing.}
+% \cvline{2000}{Mentored summer student in molecular biology.}
+
+
+\section{Conferences}
+
+\subsection{Oral presentation}
+\cvline{2020-10-29}{Basu MK (2020) Reading the book of life: the language of proteins. ISCB-Latin America, SolBio BioNetMX.}
+\cvline{2020-07-14}{Basu MK (2020) Reading the book of life: the language of proteins. Intelligent Systems in Molecular Biology (ISMB).}
+\cvline{2020-07-13} {Basu MK (2020) Exome sequencing identifies abnormalities in glycosylation and ANKRD36C defects as probable causes of immune-mediated thrombotic thrombocytopenic purpura (TTP). Intelligent Systems in Molecular Biology (ISMB).}
+\cvline{2019-12-7}{Massicano F, Staley E, Halkidis K, Kocher N, Williams LA, Marques MB, Guillory B, Cao W, Basu MK, Zheng XL (2019) Exome sequencing identifies glycosylation defects as a probable cause of immune thrombotic thrombocytopenic purpura, American Society of Hematology annual conference, Dec 7-10, 2019, Orlando, FL.}
+
+\subsection{Posters}
+\cvline{2020-07-13}{Basu MK (2020) Exome sequencing identifies abnormalities in glycosylation and ANKRD36C defects as probable causes of immune-mediated thrombotic thrombocytopenic purpura (TTP). Intelligent Systems in Molecular Biology (ISMB).}
+\cvline{2019-12-7}{Massicano F, Staley E, Halkidis K, Kocher N, Williams LA, Marques MB, Guillory B, Cao W, Basu MK, Zheng XL (2019) Exome sequencing identifies glycosylation defects as a probable cause of immune thrombotic thrombocytopenic purpura, American Society of Hematology annual conference, Dec 7-10, 2019, Orlando, FL.} 
+\cvline{2018-11-14}{Spurlock B, Parker D, Basu MK, Hjelmeland A, Mitra K (2018) Modulation of mitochondrial fission activity maintains ovarian tumor initiating cells dependent on mitochondrial energetics. Presented at The Society for Redox Biology and Medicine's 25th Annual Conference (SfRBM 2018), November 14-17, 2018, Chicago, IL, USA.} 
+\cvline{2018-04-25}{Yu L, Mitra K, Arend R, Basu MK (2018) DBGES-a predictive and prognostic gene-expression signature for ovarian and other cancers, UAB translational bioinformatics conference.}
+\cvline{2017-07-09}{Parker D, Spurlock B, Tanwar D, Basu MK, Mitra K (2017) Mitochondrial energetics regulated by mitochondrial fission modulates cell cycle towards maintaining stemness. GRC Cell Growth and Proliferation, July 9-14 , 2017}
+\cvline{2017-06-17}{Yu L, Basu MK (2017) The language of protein domains, Pathology research retreat.}
+\cvline{2016-11-05}{UAB Comprehensive Cancer Center Symposium Mutation distribution and codon usage bias in oncogene and tumor-suppressor genes.}
+\cvline{2016-09-09}{UAB Core day: Genifx: Genome Informatics Facility at UAB.}
+\cvline{2016-07-11}{Intelligent Systems in Molecular Biology (ISMB), Orlando, FL “Position-dependent mutation distribution and codon usage bias in oncogene and tumor-suppressor genes”.}
+\cvline{2016-02-03}{Parker D, Archana I, Basu MK, Mitra K (2016) Mitochondrial regulation of Cyclin E, AACR Precision Medicine Series: Cancer Cell Cycle.}
+\cvline{2015-07-19}{Parker D, Archana I, Basu MK, Mitra K. (2015) Mitochondrial fission protein Drp1 controls cell proliferation in a cell density dependent manner by regulating Cyclin E. Cell Symposia, Multifaceted Mitochondria, Chicago, IL, USA , July 19-21, 2015.}
+\cvline{2014-11-18}{UAB Core Day. “Genifx: Genome Informatics Facility @ UAB”.}
+\cvline{2014-10-06}{UAB Comprehensive Cancer Center Symposium “ContrastRank: A New Method for Ranking Cancer Driver Genes and Tumor Samples Classification”.}
+\cvline{2013-11-05}{UAB Comprehensive Cancer Center Symposium. Cancer Center Symposium. “The Role of Mitochondrial Fission and Fusion in Evolution of Cancer Genes”, with Paul Boothe.}
+
+
+
+
+
+% \section{Other Responsibilities}
+% \cvline{2013--Present}{Editorial Board Member of Evolutionary Biology section, BioMed Research International.}
+% \cvline{2012--Prsent}{Adjunct faculty in F1000 prime.}
+% \cvline{2011-Present}{Editor, Frontiers in Bioinformatics and Computational Biology.}
+% \cvline{2005--Present}{Reviewer of several journals, such as \emph{J. Mol. Biol}, \emph{Proteomics},  \emph{BMC Evolutionary Biology}, \emph{PLOS Computational Biology}, \emph{Gene}, etc.}
+% \cvline{2007--Present}{Involved in genome analysis of \emph{Daphnia}, as a part of \emph{Daphnia} genome consortium.}
+% \cvline{2006--2007}{Institute selected member of Fellows Committee
+%   (FELCOM) at NIH.}  \cvline{2007}{Chief judge of Bioinformatics and
+%   Computational Biology section of Fellows Award of Research
+%   Excellence (FARE) at NIH.}  
+% \cvline{2006}{Reviewer, RECOMB satellite
+%   workshop on comparative genomics, Montr\'eal, Canada.}
+
+\section{Skills}
+
+\subsection{Bioinformatics}
+\cvline{}{All aspects of classical bioinformatics, comparative genomics, evolutionary genomics, Next-generation sequence anlysis (NGS), RNASeq, whole-genome and exome analysis, single-cell data analysis, cancer genomics.}
+
+\subsection{Data mining and AI}
+\cvline{}{Traditional machine learning, regressions, SVM, Radom Forrest, clustering, PCA, PSLDA, SPLSDA, NMF, Deep learning using Keras, TensorFlow.}.
+
+\subsection{Computers}
+\cvline{Software development}{Algorithm design, object-oriented system design, design patterns, cross-platform and platform-dependent software 
+development on GNU/Linux platform using different languages, network programming, database development, system programming, code maintenance and 
+debugging.}
+\cvline{Languages}{C, C++, Java, Perl, Python, JavaScript, SQL, R, Octave, Matlab, \LaTeX.}
+% \cvline{File Formats}{HTML, XML, SVG, PDF, TTF, AFM, PFB and PFM font file, ABI and SCF chromatogram formats, GFF, GenBank, PDB, FASTA, Fastaq, BAM/SAM.}
+% \cvline{Libraries}{Java API, GTK+, WxWidgets, MySQL, POSIX and numerous Perl modules.}
+% \cvline{HPC}{SLURM, Sun Grid Engine (SGE), PBS, MPI, PVM.}
+\cvline{Databases}{MySQL, SyBase, SQLite, Barkley DB.}
+\cvline{Cloud computing and containers}{AWS, Google cloud, Docker}
+
+\subsection{High Performance Computing}
+\cvline{}{Extensive knowledge in hardware, purchasing, and setting up and running Linux cluster, parallel programming using MPI and PVM, and programming job schedulers like SGE 
+and SLURM.} 
+
+
+% \subsection{Statistics}
+% \cvline{}{R, GNUPlot.}
+
+% \section{Research Highlights}
+% \cvline{1.}{We developed a method for quantifying protein domain promiscuity and created a new method for genome phylogeny based on domain composition of proteins.}
+% \cvline{2.}{We introduced ``bigram analysis'' for the first time in the context of protein domains. The work made the word ``bigram'' a part of the standard vocabulary in the field.}
+% \cvline{3.}{SeWeR is highly regarded interface in the field and has become a platform for developing other projects, such as Catherine Letondal's PISE/SeWeR (\url{http://www.pasteur.fr/recherche/unites/sis/Pise/}). I quote a review of my talk in O'Reilly Bioinformatics conference:}
+% \cvline{}{\emph{“One of the revelations was a gem of a project created by Malay Kumar Basu… Basu’s striking talk described the philosophy and technology behind the system. SeWeR is a perfect example of some of the extraordinary individual ef\null forts taking place in the open source software development community.”}}
+% \cvline{}{---Counsell D (2002) Meeting Review: O'Reilly Bioinformatics Technology Conference, \emph{Comparative and Functional Genomics} (2002), 3, pp 264--269.}
+% \cvline{4.}{As far as I know, I was the first to use SVG in bioinformatics.}
+% \cvline{5.}{Several of my software applications have been used in other projects, e.g. ABI.pm module has been used in software such as SeqDoc (Crowe ML, \emph{BMC Bioinformatics}, 2005, 6:133).}
+% \end{document}
+
+
+% \cvlanguage{language 1}{Skill level}{Comment} \cvlanguage{language
+%   2}{Skill level}{Comment} \cvlanguage{language 3}{Skill
+%   level}{Comment}
+
+% \section{Computer skills}
+% \cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+% \cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+% \section{Interests}
+% \cvline{hobby 1}{\small Description} \cvline{hobby 2}{\small
+%   Description} \cvline{hobby 3}{\small Description}
+
+% \closesection{} % needed to renewcommands
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% \section{Extra 1}
+% \cvlistitem{Item 1} \cvlistitem{Item 2} \cvlistitem[+]{Item
+%   3} % optional other symbol
+
+% \section{Extra 2}
+% \cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+% \cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+% \cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% 'publications' is the name of a BibTeX file
+%\\
+% \hline
+%\line(1,0){.8\textwidth}
+
+\centerline{\rule{5cm}{0.4pt}}
+
+
+%% end of file `template_en.tex'.
+
+\end{document}
