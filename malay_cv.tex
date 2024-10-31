@@ -1,45 +1,78 @@
-\documentclass[10pt,letterpaper]{moderncv}
+\documentclass[10.5pt,letterpaper,sans]{moderncv}
 
-% moderncv themes
-% \moderncvtheme[blue]{casual} % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-% % idem
-%\moderncvtheme[grey]{classichack}
-\moderncvtheme[]{classic}
+% % moderncv themes
+% % \moderncvtheme[blue]{casual} % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+% % % idem
+% %\moderncvtheme[grey]{classichack}
+\moderncvcolor{blue} 
+\moderncvstyle[]{classic}
 
-% character encoding
-% \usepackage[utf8]{inputenc} % replace by the encoding you are using
-%\usepackage{bibtopic} 
-%\usepackage{natbib} 
-%\usepackage{breakurl}
-\usepackage{mathpazo}
-\usepackage[no-path]{fontspec} 
-\defaultfontfeatures{Mapping=tex-text}
-\usepackage{xunicode} \usepackage{xltxtra} \setmainfont{Minion Pro}
-\setsansfont{Myriad Pro} \setmonofont{Consolas}
-%\fontspec[Ligatures={Rare}]{Myriad Pro}
 
-% adjust the page margins
-%\usepackage[scale=0.8]{geometry}
-\recomputelengths % required when changes are made to page layout lengths
+% % character encoding
+% % \usepackage[utf8]{inputenc} % replace by the encoding you are using
+% %\usepackage{bibtopic} 
+% %\usepackage{natbib} 
+% %\usepackage{breakurl}
 
-% personal data
-\firstname{\huge{} Malay~Kumar~Basu} \familyname{} 
-\title{\LARGE Curriculum Vit\ae}
-% \address{\textsf{University of Alabama, Birmingham\\Department of Pathology WP P220D\\619 19th St. S.}}{\textsf{Birmingham, AL 35249 USA}} % optional, remove the line if not wanted
-\address{\textsf{3812 Booth St. Apt. #6}}{\textsf{Kansas City, KS 66103 USA}} % optional, remove the line if not wanted
-\mobile{Mobile: 240-421-2460} % optional, remove the line if not wanted
-\phone{Phone: 240-428-8246} % optional, remove the line if not wanted
-%\fax{fax (optional)} % optional, remove the line if not wanted
-\email{Email: malaykbasu@gmail.com} % optional, remove the line if not wanted
-%\email{Email: malaykbasu@gmail.com}
-\extrainfo{\Lightning{} Web: www.malaybasu.com} % optional, remove the line if not wanted
-% \photo[64pt]{picture} % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-% \quote{Some quote
-%   (optional)} % optional, remove the line if not wanted
+\ifxetexorluatex
+  \usepackage{fontspec}
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Minion Pro}
+\setsansfont{Myriad Pro} 
+\setmonofont{Consolas}
+
+  % you may also consider Fira Sans Light for a extra modern look
+  %\setsansfont[ItalicFont={Fira Sans Light Italic},%
+  %           BoldFont={Fira Sans},%
+  %           BoldItalicFont={Fira Sans Italic}]%
+  %           {Fira Sans Light}%
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+\fi
+
+% % \usepackage{mathpazo}
+% %\usepackage[no-path]{fontspec}
+% % \usepackage{fontspec} 
+% % \defaultfontfeatures{Mapping=tex-text}
+% % \usepackage{xunicode} \usepackage{xltxtra} \setmainfont{Minion Pro}
+% % \setsansfont{Myriad Pro} \setmonofont{Consolas}
+% %\fontspec[Ligatures={Rare}]{Myriad Pro}
+% \renewcommand {\familydefault}{\sfdefault}
+
+% % adjust the page margins
+
+%\usepackage[hmargin=0.5in,vmargin=10pt]{geometry}
+\usepackage[scale=0.75]{geometry}
+% \recomputelengths % required when changes are made to page layout lengths
+
+% \usepackage[english]{babel}
+
+% % personal data
+\name{Malay}{Kumar~Basu} 
+\title{Curriculum Vit\ae}
+% % \address{\textsf{University of Alabama, Birmingham\\Department of Pathology WP P220D\\619 19th St. S.}}{\textsf{Birmingham, AL 35249 USA}} % optional, remove the line if not wanted
+\address{3901 Rainbow Blvd HLSIC 3095}{Kansas City, KS 66160, USA} % optional, remove the line if not wanted
+% \mobile{Mobile: 240-421-2460} % optional, remove the line if not wanted
+\phone[mobile]{+1~(240)~428-8246} % optional, remove the line if not wanted
+% %\fax{fax (optional)} % optional, remove the line if not wanted
+\email{malaykbasu@gmail.com} % optional, remove the line if not wanted
+
+\homepage{www.malaybasu.com} % optional, remove the line if not wanted
+% % \photo[64pt]{picture} % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% % \quote{Some quote
+% %   (optional)} % optional, remove the line if not wanted
 
 % \nopagenumbers{} % uncomment to suppress automatic page numbering for CVs longer than one page
 %\usepackage[dvipdfm]{hyperref}
 %\usepackage{breakurl}
+
+\setlength {\hintscolumnwidth}{2.5cm}
+\renewcommand*\hintfont{\fontsize{9}{10}\selectfont}
+
+
 \usepackage{multibib}
 \newcites{articles,perspectives,reviews,others}{%
 Published Research Articles,%
@@ -93,10 +126,13 @@ Other publications}
 %\bibliographystylebk{myapalike}
 \urlstyle{same}
 \renewcommand{\listitemsymbol}{-}
-\maketitle
+
+\makecvtitle
 %\section{Summary}
+
+
 \section{Research Interests}
-\vspace{-10pt}
+% \vspace{-10pt}
 \cvline{}{Comparative and evolutionary genomics; Computational Biology; Bioinformatics; Data-mining and machine-learning; developing software
 tools for bioinformatics; genome informatics; high-performance, cloud and grid computing.}
 %\cvline{}{Highly skilled bioinformatics scientist, computational biologist, and award-winning educator looking for a new exciting opportunity.}
@@ -520,5 +556,6 @@ and SLURM.}
 
 
 %% end of file `template_en.tex'.
+
 
 \end{document}
